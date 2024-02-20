@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('calculateButton').addEventListener('click', calculateAges);
+});
+
+
+
 function calculateAges() {
     const birthdate = new Date(document.getElementById('birthdate').value);
     const resultsDiv = document.getElementById('results');
@@ -29,7 +35,7 @@ function calculateAges() {
 }
 
 function calculateExactAge(fromDate, toDate) {
-    const years = toDate.getFullYear() - fromDate.getFullYear();
+    let years = toDate.getFullYear() - fromDate.getFullYear();
     let months = toDate.getMonth() - fromDate.getMonth();
     let days = toDate.getDate() - fromDate.getDate();
 
