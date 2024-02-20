@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Traveler's Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Sniglet', cursive;
+        }
+        .centered-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group, .btn {
+            width: 30%;
+            margin: auto; /* Keeps the element centered */
+        }
+        #birthdate {
+            text-align: center;
+        }
+        .btn {
+            display: block; /* Ensures the button is treated as a block element */
+            margin-top: 20px; /* Adds space above the button for aesthetics */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Traveler's Age Calculator</h1>
+        <p class="lead">Enter your birthdate and let's see how old you'll be at various cosmic milestones!</p>
+        <div class="centered-container">
+            <div class="input-group mb-3">
+                <input type="date" id="birthdate" class="form-control">
+            </div>
+            <button onclick="calculateAges()" class="btn btn-primary">Calculate</button>
+        </div>
+        <div id="results" class="mt-4"></div>
+    </div>
+
+    <script src="ageCalculator.js"></script>
+</body>
+</html>
+
